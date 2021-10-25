@@ -1,19 +1,17 @@
-import NavBar from "./components/NavBar.js";
+import NavBar from './components/NavBar';
+import ItemListContainer from './components/containers/ItemListContainer';
+import {Container, Row, Col} from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-      </header>
+    <Container fluid>
       <NavBar />
-    </div>
+      <Row className="mx-0">
+        <Col className="mt-5 text-center"> 
+          <ItemListContainer greeting="BIENVENIDOS A FREAKSHOP" /> 
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
