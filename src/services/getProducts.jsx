@@ -4,9 +4,17 @@ const productos = [
     { id: 3,foto:'https://http2.mlstatic.com/D_NQ_NP_757333-MLA43922830255_102020-O.webp' , name: "Cuentos Completos: HP LoveCraft", price: 7500 },
   ];
 
- export const getProducts = new Promise((resolve, reject)=>{
+  export const getProducts = new Promise((resolve, reject)=>{
     setTimeout(()=>{
         resolve(productos)
-    }, 3000);
+    }, 2000);
+    //reject('400 not found')
+})
+
+//Devuelve un solo producto se expresa solo para el desafio de getItem con Detail
+export const getItem = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve(productos.filter(prod => prod.id === 1))
+    }, 2000);
     //reject('400 not found')
 })

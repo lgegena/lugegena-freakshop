@@ -1,16 +1,24 @@
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/containers/ItemListContainer';
+import NavBar from '../src/components/NavBar/NavBar';
+import ItemListContainer from '../src/components/containers/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from '../src/components/containers/ItemDetailContainer/ItemDetailContainer';
 import {Container, Row, Col} from 'react-bootstrap';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Cart from '../src/components/Cart/Cart';
 
 function App() {
   return (
     <Container fluid>
-      <NavBar />
-      <Row className="mx-0">
-        <Col className="mt-5 text-center"> 
-          <ItemListContainer greeting="BIENVENIDOS A FREAKSHOP" /> 
-        </Col>
-      </Row>
+        <Router>
+          <NavBar />
+          <Switch>
+            <Route exact path='/' >
+                  <ItemListContainer greeting="Bienvenidos" /> 
+            </Route>
+            <Route exact path='/categoria/:id' component={ItemListContainer}/>
+            <Route exact path='/detalle/:id' component={ItemDetailContainer}/>
+            <Route exact path='/cart' component={Cart}/>
+          </Switch>
+        </Router>
     </Container>
   );
 }
