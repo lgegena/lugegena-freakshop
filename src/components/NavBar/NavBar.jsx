@@ -14,11 +14,11 @@ const NavBar = () => {
                 >
                 <Nav.Link href="/">Home</Nav.Link>
                 <NavDropdown title="Categoria" id="navbarScrollingDropdown">
-                    <NavDropdown.Item href="/">Juegos PS4</NavDropdown.Item>
-                    <NavDropdown.Item href="/">Juegos PS5</NavDropdown.Item>
+                    <NavDropdown.Item href="Juegos PS4">Juegos PS4</NavDropdown.Item>
+                    <NavDropdown.Item href="Juegos PS5">Juegos PS5</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="/">Funcos POP</NavDropdown.Item>
-                    <NavDropdown.Item href="/">Comics</NavDropdown.Item>
+                    <NavDropdown.Item href="Funcos">Funcos</NavDropdown.Item>
+                    <NavDropdown.Item href="Comics">Comics</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="/">Manga</NavDropdown.Item>
                 </NavDropdown>
@@ -27,10 +27,10 @@ const NavBar = () => {
                     <NavDropdown.Item href="/">Tiendas</NavDropdown.Item>
                     <NavDropdown.Item href="/">Trabaja con nosotros</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="/" disabled>
+                <Nav.Link href="Cart" disabled>
                     Carrito
                 </Nav.Link>
-                <Nav.Link href="/">
+                <Nav.Link href="CartWidget">
                     <CartWidget />
                 </Nav.Link>
                 </Nav>
