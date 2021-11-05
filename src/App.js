@@ -1,6 +1,7 @@
 import NavBar from '../src/components/NavBar/NavBar';
 import ItemListContainer from '../src/components/containers/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from '../src/components/containers/ItemDetailContainer/ItemDetailContainer';
+// eslint-disable-next-line
 import {Container, Row, Col} from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Cart from '../src/components/Cart/Cart';
@@ -15,6 +16,7 @@ function App() {
                   <ItemListContainer greeting="Bienvenidos" /> 
             </Route>
             <Route exact path='/categoria/:id' component={ItemListContainer}/>
+            <Route exact path='/edad/:id' component={ItemListContainer}/>
             <Route exact path='/detalle/:id' component={ItemDetailContainer}/>
             <Route exact path='/cart' component={Cart}/>
           </Switch>

@@ -3,29 +3,37 @@ import ItemCount from '../../../Item/ItemCount'
 import {Card, Button} from 'react-bootstrap';
 import MessageAlert from '../../../MessageAlert/MessageAlert';
 import { Link } from 'react-router-dom';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 const ItemDetail = ({item}) => {
 
     return (
         <>
-            <Card key={item.id} style={{ width: '18rem' }} className="mt-2 text-center">
+        <Card key={item.id} className="m-5 text-center">
             <Card.Header>{item.name}</Card.Header>
             <Card.Body>
-                <Card.Img variant="top" src={item.foto} />
-                <Card.Title> $ {item.price}</Card.Title>
-                <Card.Text className="m-3">
-                    <ItemCount stock={item.stock} initial={1} addOn={MessageAlert}/>
-                </Card.Text>
-                <Card.Text className="m-2">
-                    <Link to='/'>
-                        <Button variant="secondary" size="sm">Volver</Button>
-                    </Link>
-                </Card.Text>
-                <Card.Text className="mt-3">
-                    {item.detail}
-                </Card.Text>
+            <Row>
+                <Col className="w-50">
+                    <Card.Img variant="top" src={item.foto} />
+                </Col>
+                <Col className="mt-5">
+                    <Card.Title> <h2> $ {item.price} </h2></Card.Title>
+                    <Card.Title className="m-5">
+                        <ItemCount stock={item.stock} initial={1} addOn={MessageAlert}/>
+                    </Card.Title>
+                    <Card.Title className="m-3">
+                        {item.detail}
+                    </Card.Title>
+                    <Card.Title className="mt-2">
+                            <Link to='/'>
+                                <Button variant="secondary" size="sm">Volver</Button>
+                            </Link>
+                    </Card.Title>
+                </Col>
+            </Row>
             </Card.Body>
-            <Card.Footer className="text-muted"> {item.stock} productos disponibles </Card.Footer>
+            <Card.Footer className="text-muted"> {item.stock} Productos Disponibles </Card.Footer>
             </Card>
         </>
     )

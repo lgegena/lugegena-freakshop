@@ -37,7 +37,7 @@ const NavBar = () => {
                 <Form className="d-flex mx-auto">
                 <FormControl
                     type="search"
-                    placeholder="Busca tu producto:"
+                    placeholder="Buscar en toda la tienda"
                     className="mr-2"
                     aria-label="Search"
                 />

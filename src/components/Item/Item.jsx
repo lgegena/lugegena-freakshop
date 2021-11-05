@@ -16,7 +16,7 @@ export default function Item(prod) {
         </Card.Body>
         <Card.Footer>
             <Link to={`/detalle/${prod.id}`}>
-                <Button variant="primary" size="sm">Detalle del producto</Button>
+                <Button variant="primary" size="sm">Detalle del Producto</Button>
             </Link>
         </Card.Footer>
         </Card>
