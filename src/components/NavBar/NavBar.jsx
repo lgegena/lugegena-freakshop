@@ -30,7 +30,7 @@ const NavBar = () => {
                 <Nav.Link href="Cart" disabled>
                     Carrito
                 </Nav.Link>
-                <Nav.Link href="CartWidget">
+                <Nav.Link href="CartWidget" disabled>
                     <CartWidget />
                 </Nav.Link>
                 </Nav>

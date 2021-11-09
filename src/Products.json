@@ -7,7 +7,7 @@
         "detail":"En Far Cry 6 juegas como un nativo de Yara y luchas usando tácticas y armamentos superiores al de una guerrilla para liberar a tu nación.",
         "price":5299,
         "stock":9,
-        "age":["mayores"]
+        "age":["mayores de 16 años"]
     },
     {
         "id":2,
@@ -17,7 +17,7 @@
         "detail":"Kratos y Atreus deberán viajar a cada uno de los nueve reinos en busca de respuestas para prepararse para la vaticinada batalla que acabará con el mundo.",
         "price":7419,
         "stock":10,
-        "age":["mayores"]
+        "age":["mayores de 12 años"]
     },
     {
         "id":3,
@@ -27,7 +27,7 @@
         "detail":"Junto a un nuevo Rorschach y los fatales Mimo y Marioneta, la búsqueda los llevará a un Universo DC al borde del colapso. Corresponde a Doomsday Clock #1-6 USA.",
         "price":1249,
         "stock":11,
-        "age":["mayores"]
+        "age":["mayores de 12 años"]
     },
     {
         "id":4,
@@ -37,7 +37,7 @@
         "detail":"Segunda y última parte del repaso por lo que nos dejó Doomsday Clock, la gran saga de Geoff Johns y Gary Frank. Doomsday Clock (parte 2).",
         "price":1649,
         "stock":5,
-        "age":["mayores"]
+        "age":["mayores de 12 años"]
     },
     {
         "id":5,
@@ -47,7 +47,7 @@
         "detail":"Figura coleccionable. DC Comics.",
         "price":5149,
         "stock":100,
-        "age":["mayores"]
+        "age":["todas las edades"]
     },
     {
         "id":6,
@@ -57,6 +57,6 @@
         "detail":"Coleccion de figuras coleccionables SpiderMan: No Way Home. Marvel Entertaiment. ",
         "price":22670,
         "stock":50,
-        "age":["mayores"]
+        "age":["todas las edades"]
     }
 ]
