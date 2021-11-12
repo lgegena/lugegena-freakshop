@@ -1,14 +1,15 @@
-import NavBar from '../src/components/NavBar/NavBar';
-import ItemListContainer from '../src/components/containers/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from '../src/components/containers/ItemDetailContainer/ItemDetailContainer';
-// eslint-disable-next-line
-import {Container, Row, Col} from 'react-bootstrap';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/containers/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/containers/ItemDetailContainer/ItemDetailContainer';
+import {Container} from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Cart from '../src/components/Cart/Cart';
+import Cart from './components/Cart/Cart';
+import CartContextProvider from './context/CartContext';
 
 function App() {
   return (
     <Container fluid>
+      <CartContextProvider>
         <Router>
           <NavBar />
           <Switch>
@@ -21,6 +22,7 @@ function App() {
             <Route exact path='/cart' component={Cart}/>
           </Switch>
         </Router>
+      </CartContextProvider>
     </Container>
   );
 }
