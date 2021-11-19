@@ -1,10 +1,10 @@
-import {Navbar,Nav,NavDropdown,Form,FormControl,Button, Badge} from 'react-bootstrap';
+import {Navbar,Nav,NavDropdown,Form,FormControl,Button, Badge,OverlayTrigger,Tooltip } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext';
 import CartWidget from './CartWidget';
 
 const NavBar = () => {
-    const { totalCartPay } = useCartContext();
+    const { totalCart, totalItemCart, cartList } = useCartContext();
 
     return (
         <Navbar bg="light" expand="lg">
@@ -37,18 +37,27 @@ const NavBar = () => {
                 </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
-            <Form className="d-flex mx-auto">
-                <FormControl
-                    type="search"
-                    placeholder="Buscar en toda la tienda"
-                    className="mr-2"
-                    aria-label="Search"
-                />
-                <Button variant="outline-success">Ir</Button>
-            </Form>
-            <Nav.Link as={Link} to="/cart">
-                    <CartWidget /> <Badge bg="success" > $ {totalCartPay}</Badge>
-            </Nav.Link>
+            <Nav style={{margin: cartList.length === 0 ? '0 3rem' : ''}}>
+                <Form  className="d-flex mx-auto" >
+                    <FormControl
+                        type="search"
+                        placeholder="Buscar en toda la tienda"
+                        className="mr-2"
+                        aria-label="Search"
+                    />
+                    <Button variant="outline-success">Ir</Button>
+                </Form>
+                <Nav.Link as={Link} to="/cart" hidden={cartList.length === 0 ? true : false} >
+                        <CartWidget/>
+                        <OverlayTrigger placement={'bottom'} overlay={
+                            <Tooltip id={`tooltip-bottom`} >
+                                <Badge bg="success" > $ {totalCart()} </Badge>
+                            </Tooltip>
+                        }>
+                            <Badge pill bg="primary" > {totalItemCart()}</Badge>
+                        </OverlayTrigger>
+                </Nav.Link>
+            </Nav>
         </Navbar>
     )
 }

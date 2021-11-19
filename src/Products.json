@@ -7,7 +7,7 @@
         "detail":"En Far Cry 6 juegas como un nativo de Yara y luchas usando tácticas y armamentos superiores al de una guerrilla para liberar a tu nación.",
         "price":5299,
         "stock":9,
-        "age":["mayores de 16 años"]
+        "age":"mayores de 16 años"
     },
     {
         "id":2,
@@ -17,7 +17,7 @@
         "detail":"Kratos y Atreus deberán viajar a cada uno de los nueve reinos en busca de respuestas para prepararse para la vaticinada batalla que acabará con el mundo.",
         "price":7419,
         "stock":10,
-        "age":["mayores de 12 años"]
+        "age":"mayores de 12 años"
     },
     {
         "id":3,
@@ -27,7 +27,7 @@
         "detail":"Junto a un nuevo Rorschach y los fatales Mimo y Marioneta, la búsqueda los llevará a un Universo DC al borde del colapso. Corresponde a Doomsday Clock #1-6 USA.",
         "price":1249,
         "stock":11,
-        "age":["mayores de 12 años"]
+        "age":"mayores de 12 años"
     },
     {
         "id":4,
@@ -37,7 +37,7 @@
         "detail":"Segunda y última parte del repaso por lo que nos dejó Doomsday Clock, la gran saga de Geoff Johns y Gary Frank. Doomsday Clock (parte 2).",
         "price":1649,
         "stock":5,
-        "age":["mayores de 12 años"]
+        "age":"mayores de 12 años"
     },
     {
         "id":5,
@@ -47,7 +47,7 @@
         "detail":"Figura coleccionable. DC Comics.",
         "price":5149,
         "stock":100,
-        "age":["todas las edades"]
+        "age":"todas las edades"
     },
     {
         "id":6,
@@ -57,6 +57,26 @@
         "detail":"Coleccion de figuras coleccionables SpiderMan: No Way Home. Marvel Entertaiment. ",
         "price":22670,
         "stock":50,
-        "age":["todas las edades"]
+        "age":"todas las edades"
+    },
+    {
+        "id":7,
+        "foto":"http://d2r9epyceweg5n.cloudfront.net/stores/057/977/products/ec8dd2f7-cd4e-b562-2f38-fdcd26d3d6ef1-bf9d5284c61d39322516357035948955-640-0.jpg",
+        "name":"Carnage Absoluto",
+        "category":"Comics",
+        "detail":"¡CARNAGE, el vastago psicotico de Venom, ha regresado, mas poderoso e imparable que nunca. Los heroes mas poderosos de la tierra deberan unirse para intentar detener a esta pesadilla viviente de una vez por todas.",
+        "price":1379,
+        "stock":26,
+        "age":"Mayores de 16 años"
+    },
+    {
+        "id":8,
+        "foto":"https://contentv2.tap-commerce.com/cover/large/9789506445843_1.jpg?id_com=1113",
+        "name":"Stephen King: Billy Summers",
+        "category":"comics",
+        "detail":"Billy Summers es un asesino a sueldo y el mejor en lo suyo. Siendo uno de los mejores francotiradores del mundo, debe completar un ultimo encargo antes de su retiro y desaparecer sin dejar rastro, ¿Que podria salirle mal?. Todo.",
+        "price":2699,
+        "stock":14,
+        "age":"Mayores de 16 años"
     }
 ]

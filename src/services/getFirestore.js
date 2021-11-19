@@ -1,6 +1,5 @@
-//No tomar en cuenta esta implementacion
-import firebase from "firebase"
-import 'firebase/firestone'
+import firebase from 'firebase'
+import 'firebase/firestore'
 
 const firebaseConfig = {
 
