@@ -10,7 +10,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.1",
-    "firebase": "^9.5.0",
+    "firebase": "^8.9.1",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-rc.1",
     "react-dom": "^17.0.2",
@@ -42,5 +42,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Esta es una tienda de juegos, comics, funcos, dinamica que simula una app para compras online",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgegena/lugegena-freakshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lgegena/lugegena-freakshop/issues"
+  },
+  "homepage": "https://github.com/lgegena/lugegena-freakshop#readme"
 }
